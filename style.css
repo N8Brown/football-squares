@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+    margin: auto;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+        "ttitle . hteam hteam hteam hteam hteam hteam hteam hteam hteam hteam"
+        ". stitle htscore htscore htscore htscore htscore htscore htscore htscore htscore htscore "
+        "ateam atscore player player player player player player player player player player"
+        "ateam atscore player player player player player player player player player player"
+        "ateam atscore player player player player player player player player player player"
+        "ateam atscore player player player player player player player player player player"
+        "ateam atscore player player player player player player player player player player"
+        "ateam atscore player player player player player player player player player player"
+        "ateam atscore player player player player player player player player player player"
+        "ateam atscore player player player player player player player player player player"
+        "ateam atscore player player player player player player player player player player"
+        "ateam atscore player player player player player player player player player player";
+}
+
+#teamTitle {
+    grid-area: ttitle;
+}
+
+#homeTeam {
+    grid-area: hteam;
+}
+
+#awayTeam {
+    grid-area: ateam;
+}
+#gameBoard {
+    grid-area: player;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+}
+#scoreTitle {
+    grid-area: stitle;
+}
+
+#homeScores {
+    grid-area: htscore;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#awayScores {
+    grid-area: atscore;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+}
+

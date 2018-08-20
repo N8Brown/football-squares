@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Squares</title>
+</head>
+<body>
+    <div id="container">
+        <div id="homeTeam">HOME TEAM</div>
+
+        <div id="awayTeam">AWAY TEAM</div>
+
+        <div id="teamTitle">TEAMS</div>
+
+        <div id="scoreTitle">SCORES</div>
+
+        <div id="homeScores">
+            <div class="homeScore" id="homeScore1">#</div>
+            <div class="homeScore" id="homeScore2">#</div>
+            <div class="homeScore" id="homeScore3">#</div>
+            <div class="homeScore" id="homeScore4">#</div>
+            <div class="homeScore" id="homeScore5">#</div>
+            <div class="homeScore" id="homeScore6">#</div>
+            <div class="homeScore" id="homeScore7">#</div>
+            <div class="homeScore" id="homeScore8">#</div>
+            <div class="homeScore" id="homeScore9">#</div>
+            <div class="homeScore" id="homeScore10">#</div>
+        </div>
+
+        <div id="awayScores">
+            <div class="awayScore" id="awayScore1">#</div>
+            <div class="awayScore" id="awayScore2">#</div>
+            <div class="awayScore" id="awayScore3">#</div>
+            <div class="awayScore" id="awayScore4">#</div>
+            <div class="awayScore" id="awayScore5">#</div>
+            <div class="awayScore" id="awayScore6">#</div>
+            <div class="awayScore" id="awayScore7">#</div>
+            <div class="awayScore" id="awayScore8">#</div>
+            <div class="awayScore" id="awayScore9">#</div>
+            <div class="awayScore" id="awayScore10">#</div>
+        </div>
+        
+        <div id="gameBoard">
+            <div class="playerBox row1" id="r1c1"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row1" id="r1c2"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row1" id="r1c3"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row1" id="r1c4"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row1" id="r1c5"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row1" id="r1c6"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row1" id="r1c7"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row1" id="r1c8"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row1" id="r1c9"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row1" id="r1c10"><i class="fas fa-football-ball"></i></div>
+
+            <div class="playerBox row2" id="r2c1"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row2" id="r2c2"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row2" id="r2c3"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row2" id="r2c4"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row2" id="r2c5"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row2" id="r2c6"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row2" id="r2c7"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row2" id="r2c8"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row2" id="r2c9"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row2" id="r2c10"><i class="fas fa-football-ball"></i></div>
+
+            <div class="playerBox row3" id="r3c1"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row3" id="r3c2"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row3" id="r3c3"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row3" id="r3c4"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row3" id="r3c5"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row3" id="r3c6"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row3" id="r3c7"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row3" id="r3c8"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row3" id="r3c9"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row3" id="r3c10"><i class="fas fa-football-ball"></i></div>
+
+            <div class="playerBox row4" id="r4c1"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row4" id="r4c2"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row4" id="r4c3"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row4" id="r4c4"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row4" id="r4c5"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row4" id="r4c6"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row4" id="r4c7"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row4" id="r4c8"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row4" id="r4c9"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row4" id="r4c10"><i class="fas fa-football-ball"></i></div>
+
+            <div class="playerBox row5" id="r5c1"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row5" id="r5c2"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row5" id="r5c3"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row5" id="r5c4"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row5" id="r5c5"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row5" id="r5c6"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row5" id="r5c7"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row5" id="r5c8"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row5" id="r5c9"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row5" id="r5c10"><i class="fas fa-football-ball"></i></div>
+
+            <div class="playerBox row6" id="r6c1"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row6" id="r6c2"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row6" id="r6c3"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row6" id="r6c4"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row6" id="r6c5"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row6" id="r6c6"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row6" id="r6c7"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row6" id="r6c8"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row6" id="r6c9"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row6" id="r6c10"><i class="fas fa-football-ball"></i></div>
+
+            <div class="playerBox row7" id="r7c1"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row7" id="r7c2"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row7" id="r7c3"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row7" id="r7c4"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row7" id="r7c5"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row7" id="r7c6"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row7" id="r7c7"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row7" id="r7c8"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row7" id="r7c9"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row7" id="r7c10"><i class="fas fa-football-ball"></i></div>
+
+            <div class="playerBox row8" id="r8c1"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row8" id="r8c2"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row8" id="r8c3"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row8" id="r8c4"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row8" id="r8c5"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row8" id="r8c6"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row8" id="r8c7"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row8" id="r8c8"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row8" id="r8c9"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row8" id="r8c10"><i class="fas fa-football-ball"></i></div>
+
+            <div class="playerBox row9" id="r9c1"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row9" id="r9c2"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row9" id="r9c3"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row9" id="r9c4"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row9" id="r9c5"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row9" id="r9c6"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row9" id="r9c7"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row9" id="r9c8"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row9" id="r9c9"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row9" id="r9c10"><i class="fas fa-football-ball"></i></div>
+
+            <div class="playerBox row10" id="r10c1"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row10" id="r10c2"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row10" id="r10c3"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row10" id="r10c4"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row10" id="r10c5"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row10" id="r10c6"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row10" id="r10c7"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row10" id="r10c8"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row10" id="r10c9"><i class="fas fa-football-ball"></i></div>
+            <div class="playerBox row10" id="r10c10"><i class="fas fa-football-ball"></i></div>
+        </div>
+    </div>
+</body>
+</html>
