@@ -1,6 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     text-align: center;
     margin: auto;
+    min-height: 100vh;
+    min-width: 900px;
+    max-width: 1200px;
 }
 
 #container {
@@ -8,7 +17,7 @@ body {
     grid-template-rows: repeat(12, 1fr);
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas: 
-        "ttitle . hteam hteam hteam hteam hteam hteam hteam hteam hteam hteam"
+        ". . hteam hteam hteam hteam hteam hteam hteam hteam hteam hteam"
         ". stitle htscore htscore htscore htscore htscore htscore htscore htscore htscore htscore "
         "ateam atscore player player player player player player player player player player"
         "ateam atscore player player player player player player player player player player"
@@ -20,11 +29,12 @@ body {
         "ateam atscore player player player player player player player player player player"
         "ateam atscore player player player player player player player player player player"
         "ateam atscore player player player player player player player player player player";
+    grid-gap: 5px 5px;
+    border: 5px solid black;
+    border-radius: 5px;
+    margin: 20px;
 }
 
-#teamTitle {
-    grid-area: ttitle;
-}
 
 #homeTeam {
     grid-area: hteam;
@@ -32,13 +42,20 @@ body {
 
 #awayTeam {
     grid-area: ateam;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    justify-self: center;
 }
 #gameBoard {
     grid-area: player;
     display: grid;
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(10, 1fr);
+    grid-gap: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
 }
+
 #scoreTitle {
     grid-area: stitle;
 }
@@ -47,11 +64,85 @@ body {
     grid-area: htscore;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+    margin-right: 2.5px;
+    margin-left: -2.5px;
 }
 
 #awayScores {
     grid-area: atscore;
     display: grid;
     grid-template-rows: repeat(10, 1fr);
+    margin-bottom: 2.5px;
+    margin-top: -2.5px;
+
 }
 
+#homeTeam, #scoreTitle {
+    align-self: center;
+}
+
+.playerBox {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+.place-holder {
+    width: 50px;
+}
+
+.playerBox, .away-score-box, .home-score-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.away-score-box, .home-score-box {
+    height: 100%;
+    border: solid black;
+}
+
+.away-score-box {
+    border-width: 2.5px 5px;
+}
+
+.home-score-box {
+    border-width: 5px 2.5px;
+}
+
+#away-score1 {
+    border-top-width: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#away-score10 {
+    border-bottom-width: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#home-score1 {
+    border-left-width: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#home-score10 {
+    border-right-width: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/* Add this class to <img> elements when a name is added to take place of the football place holder image*/
+.hidden {
+    display: none;  
+}
+
+/* Add this class to the <p> element added when a player enters their name in the box*/
+.player-name {
+    padding-top: 25%;
+}
